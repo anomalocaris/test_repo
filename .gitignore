@@ -1,0 +1,13 @@
+# OS
+Thumbs.db
+.DS_Store
+
+# Gradle
+.gradle
+build/
+
+# Idea
+.idea
+*.iml
+*.iws
+*.ipr
