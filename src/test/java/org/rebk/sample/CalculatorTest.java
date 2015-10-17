@@ -18,4 +18,16 @@ public class CalculatorTest {
         // verify
         assertThat(actual, is(7));
     }
+
+    @Test
+    public void testSubtract() throws Exception {
+        // setup
+        Calculator c = new Calculator();
+
+        // execute
+        int actual = c.subtract(3, 4);
+
+        // verify
+        assertThat(actual, is(-1));
+    }
 }

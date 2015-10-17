@@ -6,4 +6,8 @@ public class Calculator {
         return a + b;
     }
 
+    public int subtract(int a, int b) {
+        throw new UnsupportedOperationException("未実装");
+    }
+
 }
