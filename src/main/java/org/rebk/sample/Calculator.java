@@ -7,7 +7,7 @@ public class Calculator {
     }
 
     public int subtract(int a, int b) {
-        throw new UnsupportedOperationException("未実装");
+        return a - b;
     }
 
 }
