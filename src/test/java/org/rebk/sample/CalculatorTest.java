@@ -30,4 +30,37 @@ public class CalculatorTest {
         // verify
         assertThat(actual, is(-1));
     }
+
+    @Test
+    public void testMultiply() throws Exception {
+        // setup
+        Calculator c = new Calculator();
+
+        // execute
+        int actual = c.multiply(3, 4);
+
+        // verify
+        assertThat(actual, is(12));
+    }
+
+    @Test
+    public void testDivide() throws Exception {
+        // setup
+        Calculator c = new Calculator();
+
+        // execute
+        int actual = c.divide(10, 2);
+
+        // verify
+        assertThat(actual, is(5));
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void throwIllegalArgumentExceptionWhenDivisorIsZero() throws  Exception {
+        // setup
+        Calculator c = new Calculator();
+
+        // execute
+        int actual = c.divide(10, 0);
+    }
 }
